@@ -49,17 +49,17 @@ function addTodo(todo) {
     }
 }
 
-// function updateLS() {
-//     todosEl = document.querySelectorAll('li')
+function updateLS() {
+    todosEl = document.querySelectorAll('li')
 
-//     const todos = []
+    const todos = []
 
-//     todosEl.forEach(todoEl => {
-//         todos.push({
-//             text: todoEl.innerText,
-//             completed: todoEl.classList.contains('completed')
-//         })
-//     })
+    todosEl.forEach(todoEl => {
+        todos.push({
+            text: todoEl.innerText,
+            completed: todoEl.classList.contains('completed')
+        })
+    })
 
-//     localStorage.setItem('todos', JSON.stringify(todos))
-// }
+    localStorage.setItem('todos', JSON.stringify(todos))
+}
